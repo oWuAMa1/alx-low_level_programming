@@ -5,3 +5,4 @@
 4-puts.c : print a string
 5-printf.c : print a string
 6-size.c : print sizes of data types
+100-intel : generates assembly code(intel syntax)
