@@ -3,3 +3,4 @@
 2-assembler : gcc -S option
 3-name : no option
 4-puts.c : print a string
+5-printf.c : print a string
