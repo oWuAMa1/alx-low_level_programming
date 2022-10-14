@@ -3,3 +3,4 @@
 2-print_alphabet.c: print alphabets to lower case
 3-print_alphabets.c: print from lower to upper case
 4-print_alphabt.c: print lower case without q and e
+5-print_numbers.c: print from 0 - 9
