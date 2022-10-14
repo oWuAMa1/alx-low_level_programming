@@ -9,14 +9,13 @@ int main(void)
 {
 	int x;
 
-	for (x = 'A'; x <= 'Z'; x++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
-		int lowerCase = tolower(x);
 
-		putchar(lowerCase);
+		putchar(x);
 
-		putchar('\n');
 	}
+	putchar('\n');
 
 	return (0);
 }
