@@ -6,21 +6,31 @@
 */
 int main(void)
 {
+	int a;
+	int b;
 	int x;
 	int y;
 
-	for (x = '0'; x <= '9'; x++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		for (y = '0'; y <= '8'; y++)
+		for (b = '0'; b <= '8'; b++)
 		{
-			putchar(x);
-			putchar(y);
-			if (x == '9' && y == '8')
+			for (x = '0'; x <= '9'; x++)
 			{
-				continue;
+				for (y = '0'; y <= '9'; y++)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(x);
+					putchar(y);
+					if (a == '9' && b == '8' && x == '9' && y == '9')
+					{
+						continue;
+					}
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
