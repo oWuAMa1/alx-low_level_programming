@@ -10,3 +10,4 @@
 9-print_comb.c: print 0-9 with , followed by space
 100-print_comb3.c: double digits with , followed by space in ascending order
 101-print_comb4.c: triple digits with , followed by space in ascending order
+102-print_comb5.c: print two 2-digit numbers in a kind of way

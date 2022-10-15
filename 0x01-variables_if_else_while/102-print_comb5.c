@@ -19,8 +19,13 @@ int main(void)
 			{
 				for (y = '0'; y <= '9'; y++)
 				{
+					if (a > x || b >= y)
+					{
+						continue;
+					}
 					putchar(a);
 					putchar(b);
+					putchar(' ');
 					putchar(x);
 					putchar(y);
 					if (a == '9' && b == '8' && x == '9' && y == '9')
@@ -33,6 +38,7 @@ int main(void)
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
