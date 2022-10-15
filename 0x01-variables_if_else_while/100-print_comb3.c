@@ -13,14 +13,21 @@ int main(void)
 	{
 
 		for (y = '1'; y <= '9'; y++)
-		{	
-			putchar(x);
-			putchar(y);
-
+		{
+			if (y <= x)
+			{
+				continue;
+			}
+			else if (y > x)
+			{
+				putchar(x);
+				putchar(y);
+			}
 			if (x == '8' && y == '9')
 			{
 				continue;
 			}
+
 			putchar(',');
 			putchar(' ');
 
