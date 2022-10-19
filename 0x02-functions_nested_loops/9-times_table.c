@@ -17,7 +17,14 @@ void times_table(void)
 			{
 				continue;
 			}
-			printf(", ");
+			if ( x * y < 10)
+			{
+				printf(",  ");
+			}
+			else
+			{
+				printf(", ");
+			}
 		}
 	printf("\n");
 	}
