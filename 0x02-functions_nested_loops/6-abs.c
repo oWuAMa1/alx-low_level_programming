@@ -2,12 +2,12 @@
 #include <stdlib.h>
 /**
 *_abs - entry point
-*@x: integer
+*@j: integer
 *Desc: computes absolute value of integer
 *Return: Always 0
 */
-int _abs(int x)
+int _abs(int j)
 {
-	int abs(int x);
+	int abs(int j);
 	return (0);
 }
