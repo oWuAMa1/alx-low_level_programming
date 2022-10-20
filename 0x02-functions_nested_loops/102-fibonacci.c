@@ -1,0 +1,34 @@
+#include <stdio.h>
+/**
+*main - entry point
+*Desc: print 50 fibonacci numbers
+*Return: Always 0
+*/
+int main(void)
+{
+	int i;
+
+	unsigned long fib1 = 0, fib2 = 1, total;
+
+	for (i = 0; i < 50; i++)
+	{
+
+		total = fib1 + fib2;
+
+		printf("%lu", total);
+
+		fib1 = fib2;
+
+		fib2 = total;
+
+		if (i == 50)
+		{
+			printf("\n");
+		}
+		else
+		{
+			printf(", ");
+		}
+	}
+	return (0);
+}
