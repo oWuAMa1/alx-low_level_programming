@@ -21,7 +21,7 @@ int main(void)
 
 		fib2 = total;
 
-		if (i == 50)
+		if (i == 49)
 		{
 			printf("\n");
 		}
