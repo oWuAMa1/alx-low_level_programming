@@ -3,22 +3,19 @@
 /**
 *main - entry point
 *Desc: prints the sum of all multiples of 3 and 5 less than 1024
+*Return: Always 0
 */
 int main(void)
 {
-	int x = 0;
+	int i, total = 0;
 
-	int y = 0;
-
-	while (x < 1024)
+	for (i = 0; i < 1024; i++)
 	{
-		x = x + 3;
+		if ((i % 3) == 0 || (i % 5) == 0)
+		{
+			total += i;
+		}
 	}
-	while (y < 1024)
-	{
-		y = y + 3;
-	}
-	printf("%d", x + y);
-	printf("\n");
+	printf("%d\n", total);
 	return (0);
 }
