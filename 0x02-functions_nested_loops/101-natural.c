@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*print_multiple - entry point
+*main - entry point
 *Desc: prints the sum of all multiples of 3 and 5 less than 1024
 */
-void print_multiple(void)
+int main(void)
 {
 	int x = 0;
 
@@ -20,4 +20,5 @@ void print_multiple(void)
 	}
 	printf("%d", x + y);
 	printf("\n");
+	return (0);
 }
