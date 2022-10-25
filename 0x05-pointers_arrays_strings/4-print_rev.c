@@ -10,7 +10,7 @@ void print_rev(char *s)
 
 	int MAX = strlen(s);
 
-	for (i = MAX; i >= 0; i--)
+	for (i = MAX - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
