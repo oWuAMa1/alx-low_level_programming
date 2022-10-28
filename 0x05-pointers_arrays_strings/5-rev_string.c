@@ -7,13 +7,18 @@
 */
 void rev_string(char *s)
 {
+	int MAX = strlen(s);
+
+	int mid = MAX / 2;
 
 	int i;
 
-	int MAX = strlen(s);
+	char temp;
 
-	for (i = MAX; i >= 0; i--)
+	for (i = 0; i < mid; i++)
 	{
-		s = *s + i;
+		temp = s[i];
+		s[i] = s[MAX - i - 1];
+		s[MAX - i - 1] = temp;
 	}
 }
