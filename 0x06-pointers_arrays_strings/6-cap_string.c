@@ -12,7 +12,21 @@ char *cap_string(char *s)
 
 	for (i = 0; i < MAX; i++)
 	{
-		if (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
+		if (s[i] == ' ' || s[i] == '(' || s[i] == ')' || s[i] == ',' || s[i] == '.')
+		{
+			if (isalpha(s[i + 1]))
+			{
+				s[i + 1] = toupper(s[i + 1]);
+			}
+		}
+		else if (s[i] == '?' || s[i] == ';' || s[i] == '\n' || s[i] == '\t')
+		{
+			if (isalpha(s[i + 1]))
+			{
+				s[i + 1] = toupper(s[i + 1]);
+			}
+		}
+		else if (s[i] == '{' || s[i] == '}' || s[i] == '"' || s[i] == '!')
 		{
 			if (isalpha(s[i + 1]))
 			{
