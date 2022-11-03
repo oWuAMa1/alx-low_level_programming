@@ -7,12 +7,9 @@
 */
 void print_diagsums(int *a, int size)
 {
-	
+		
 	/*bdiag is \ fdiag is / */
-	int i, j, *sum_bdiag , *sum_fdiag;
-
-	sum_bdiag = 0;
-	sum_fdiag = 0;
+	int i, j, *x, *y, sum_bdiag = 0, sum_fdiag = 0;
 
 	for (i = 0; i < size; i++)
 	{
@@ -20,16 +17,18 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				sum_bdiag += a + (i * size + j) * sizeof(a[i]);
+				x = a + (i * size + j) * sizeof(a[i]);
+				sum_bdiag += *x;
 			}
 		}
 	}
 	i = 0, j = size - 1;
 	while (i < size)
 	{
-		sum_fdiag += a + (i * size + j) * sizeof(a[i]);
+		y = a + (i * size + j) * sizeof(a[i]);
+		sum_fdiag += *y;
 		j--;
 		i++;
 	}
-	printf("%d, %d\n", *sum_bdiag, *sum_fdiag);
+	printf("%d, %d\n", sum_bdiag, sum_fdiag);
 }
