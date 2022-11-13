@@ -26,7 +26,6 @@ int compare_str(char *str1, char *str2)
 
 /**
 *to_nullchar - take pointer to the nullchar
-*@strlen: length of string
 *@s: string
 *Return: pointer to last character before '\0'
 */
@@ -49,6 +48,7 @@ char *to_nullchar(char *s)
 int is_palindrome(char *s)
 {
 	char *str = to_nullchar(s);
+
 	return (compare_str(s, str));
 }
 
